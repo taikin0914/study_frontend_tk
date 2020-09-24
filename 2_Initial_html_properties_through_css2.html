@@ -1,0 +1,65 @@
+<!--I wrote this code 
+    while watching and studying jcode's video.-->
+<!DOCTYPE html>
+<hrml>
+    <head>
+        <title></title>
+
+        <style>
+            body, button, dd, dl, dt, fieldset, form,
+            h1,h2,h3,h4,h5,h6,li,ol,p,select,table,td,
+            textarea,th,ul{
+                /* 공간에서의속성을초기화 */
+                margin:0;
+                padding:0;
+            }
+            body,button,input select,table,textarea{
+                font-size: 12px;
+                /* 폰트의타입을말함
+                1st가 적용되지 않으면 2st적용 그 다음 3st */
+                font-family: Dotum, '돋음', HElvetica,
+                "Apple SD Gothic Neo", sans-serif;
+            }
+            button, input{
+                /* border은 태두리의 줄 radius는굴곡 */
+                /* 기본적인 태두리의 줄이 있을텐데 그것을 제거한다. */
+                border-radius:0;
+            }
+            fieldset,img{
+                border:0;
+            }
+            ol,ul{
+                /* ol과 ul에는 리스트스타일이라는 것이 들어있는데 이를 제거한다는의미 */
+                list-style:none;
+            }
+            address,em{
+                font-style:normal;
+            }
+            a{
+                text-decoration:none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>해딩태그</h1>
+        <p>단락</p>
+        <!--div는 위아래로 공간을 확보하지 않음-->
+        <div>div</div>
+        <!--a는 text에 링크를 걸어줌-->
+        <a herf="/">link</a>
+        <br/>
+        <span>span</span>
+        <br/>
+        <strong>strong</strong>
+        <br/>
+        <ul>
+            <li>un-ordered list</li>
+        </ul>
+        <ol>
+            <li>ordered list</li>
+        </ol>
+    </body>
+</hrml>

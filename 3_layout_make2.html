@@ -1,0 +1,146 @@
+<!--I wrote this code 
+    while watching and studying jcode's video.-->
+<!DOCTYPE html>
+<hrml>
+    <head>
+        <title></title>
+
+        <style>
+            body, button, dd, dl, dt, fieldset, form,
+            h1,h2,h3,h4,h5,h6,li,ol,p,select,table,td,
+            textarea,th,ul{
+                margin:0;
+                padding:0;
+            }
+            body,button,input select,table,textarea{
+                font-size: 12px;
+                font-family: Dotum, '돋음', HElvetica,
+                "Apple SD Gothic Neo", sans-serif;
+            }
+            button, input{
+                border-radius:0;
+            }
+            fieldset,img{
+                border:0;
+            }
+            ol,ul{
+                list-style:none;
+            }
+            address,em{
+                font-style:normal;
+            }
+            a{
+                text-decoration:none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            /* 속성을 줄 때는 #을 사용한다*/
+            #header{
+                background: #eee;
+                /*margin-bottom=아래쪽에 여백을 준다*/
+                margin-bottom: 20px;
+                /*height는 높이를 지정*/
+                height: 100px;
+                /* 이와같이 가운데 정렬을 구현할 수 있다 */
+                width: 1000px;
+                /* 상단 우측 하단 좌측 시계방향 */
+                margin : 0 auto 20px auto;
+            }
+            #nav{
+                height:50px;
+                background: #eee;
+                width: 1000px;
+                margin : 0 auto 20px auto;
+            }
+            #footer{
+                height: 100px;
+                background: #eee;
+                width: 1000px;
+                margin : 0 auto 20px auto;
+            }
+            #content{
+                background: #eee;
+                /* margin-top: 20px;
+                margin-bottom: 20px; */
+                width: 1000px;
+                margin : 20px auto 20px auto;
+                /* section_main과 article의 위치를
+                왼쪽 오른쪽으로 다시 배치할 때 footer이
+                올라옴. 이를 해소하기 위해 
+                content 영역의 높이를 지정해줌
+                그러면 footer영역이 제자리를 잡는 모습을
+                볼 수 있음 이 보다 더 편한 방법이 있음*/
+                height: 600px;
+                
+            }
+            /*#body{
+                width: 1000px;
+                가운데 정렬을 하기 위해 body라는 이름을 가진
+                div에 header, nav 등의 div를 때려박았는데
+                이 bady라는 애에게 margin: 0 auto을 주면 
+                가운데 정렬이 가능하다
+                margin: 0 auto;
+            }*/
+            /* class는 .을 이용하여 속성을 정의한다 */
+            /* header, footer, nav를 1000px로 맞춰기
+            때문에 sectionrhk aside의 합을 1000으로
+            하겠음 */
+            .section_main{
+                width: 700px;
+                /* section의 영역을 잘 드러내기 위해
+                강렬한 색깔로 하겠음 */
+                background: #ff0;
+                /* 왼쪽부터 채워넣어주는 역활 */
+                float: left;
+            }
+            .aside{
+                width: 300px;
+                background: #f00;
+                float: left;
+                height: 600px
+            }
+            .section{
+                background: #f0f;
+                height: 300px
+            }
+            .article{
+                background: green;
+                height: 300px
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--1.가운데정렬을 하기 위해 
+        header와 nav 등의 요소를 bady라는 이름을 가진
+        div에 때려박음-->
+        <!-- <div id="body"></div> -->
+
+        <!--id는 이름
+        해더를 만듬-->
+        <div id="header">
+            header
+        </div>
+        <!--navigation을 만듬-->
+        <div id="nav">
+            nav
+        </div>
+        <!--content=section+article+aside-->
+        <!--id와class는 이름을 줄때 사용-->
+        <div id="content">
+            <div class="section_main">
+                <div class="section">section</div>
+                <div class="article">article</div>
+            </div>
+            <div class="aside">aside</div>
+        </div>
+        <!--footer을 만듬-->
+        <div id="footer">footer</div>
+        
+    </body>
+</hrml>
+
+<!--http://www.w3schools.com/html/html_layout.app-->
+<!--이코드에서 만들려는 것은 윗 주소에 나와있는 그림의
+형태로 만드려는 것에 있다-->
